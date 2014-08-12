@@ -14,16 +14,37 @@
 		
 	}
 }
+html{
+	height:100%;
+}
+body{
+	height:100%;
+}
 img{
 	max-height:909px;
 	width:100%;
 	overflow: hidden;
 }
+.aa{
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+}
 
 .opensans{
 	font-family: 'Open Sans', sans-serif;	
 }
+.quicksand{
+	font-family: 'Quicksand', sans-serif;
+}
+.btn{    
+	-webkit-transition: background-color 0.3s;
+	-moz-transition: background-color 0.3s;
+	-o-transition: background-color 0.3s;	
+	-ms-transition: background-color 0.3s;
 
+}
 .col-md-8{
 padding:0px 0px 0px 0px;
 }
