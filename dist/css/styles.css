@@ -8,6 +8,11 @@
 		padding-left:30px;
 	}
 }
+@media (min-width: 1163px) {
+	.imgfix {
+		margin-top:-10px;
+	}
+}
 @media (max-width: 991px) {
 	.fix{
 		margin-top:20px;
