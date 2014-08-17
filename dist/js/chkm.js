@@ -8,6 +8,9 @@ if (window.innerWidth <= 798) {
 		if(document.title== " Aspyre | Home | Mobile "){
 			console.log('Already on mobile site! No redirect.');
 		}
+		else if($.cookie('mobile') == '0'){
+			console.log('Mobile set, no redirect fix.')
+		}
 		else{
 			mobile();
 		}
