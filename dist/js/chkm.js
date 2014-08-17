@@ -23,5 +23,5 @@ function desktop(){
 function mobile(){
 	$.cookie('mobile', '0', { expires: 7, path: '/'});
 	console.log("Mobile redirect ," + window.innerWidth + "px");
-	window.location = "syang0525.github.io/m/index.html";
+	window.location = "http://syang0525.github.io/m/index.html";
 }
