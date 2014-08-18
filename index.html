@@ -43,7 +43,7 @@
 		<script>
 		window.onresize = function(event) {
 			if(window.innerWidth <= 797){
-
+				document.getElementById('alert').visibility="visible";
 			}
 
 		};
@@ -53,10 +53,11 @@
 
 	<body class="opensans">
 
-		<div class="alert">
+		<div class="alert" id="alert" style="display:inline; visibility:hidden;">
+			<i class="fa fa-exclamation-triangle" style="font-size:1.5em;"></i>
 			Small screen size detected. 
 			</br>
-			Would you like to visit the mobile site?
+			Would you like to visit <a href="http://syang0525.github.io/m/index.html">the mobile site?</a>
 		</div>
 
 		<!-- NAVIGATION -->
