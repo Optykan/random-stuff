@@ -8,9 +8,14 @@
 		padding-left:30px;
 	}
 }
-@media (min-width: 1163px) {
+@media (min-width: 1161px) {
 	.imgfix {
-		margin-top:-10px;
+		margin-top:-20px !important;
+	}
+}
+@media (min-width: 960px) {
+	.imgfix {
+		margin-top:-15px !important;
 	}
 }
 @media (max-width: 991px) {
@@ -128,7 +133,6 @@ padding:0px 0px 0px 0px;
 	background: #FF388F;
 }
 .green-border {
-	position: absolute;
 	margin: auto;
 	z-index: 1;
 	content: "";
@@ -145,13 +149,12 @@ padding:0px 0px 0px 0px;
 	background: #4E80FF;
 }
 .orange-border {
-	position: absolute;
 	margin: auto;
 	z-index: 1;
 	content: "";
 	width: 100px;
 	height: 2px;
-	background: #FFBE38;
+	background:#FFBE38;
 }
 
 .control-hidden{

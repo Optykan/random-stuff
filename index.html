@@ -11,7 +11,6 @@
 		<link href="dist/css/1140.css" rel="stylesheet" />
 		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 		<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-		<link href="dist/css/fix.css" rel="stylesheet" media="only screen and (max-width: 700px)" >
 
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script src="dist/js/jquery.cookie.js"></script>
@@ -21,7 +20,7 @@
 		
 		<title> Aspyre | Home </title>
 
-		<script>
+		<!--<script>
 		$(document).ready(function () {
 		    $('.dropdown-toggle').mouseover(function() {
 		        $('.dropdown-menu').show();
@@ -40,11 +39,11 @@
 		        })
 		    })
 		})
-		</script>
+		</script>-->
 
 	</head>
 
-	<body>
+	<body class="opensans">
 
 		<!-- NAVIGATION -->
 
@@ -52,31 +51,24 @@
 
 			<div class="container12">
 
-				<div class="column8">
-					<img src="logo.png" style="height:30%; width:30%; margin-top:-7px;" class="imgfix">
+				<div class="column4">
+					<img src="logo.png" style="height:70%; width:70%; margin-top:-7px;" class="imgfix">
 				</div>
 
 				<div class="column2 red-border">
-					<a href="/"><p class="opensans padding-3" style="color: black;">Home</p></a>
+					<a href="/"><p class="padding-3" style="color: black;">Home</p></a>
 				</div>
 				
-				<div class="column2">
+				<div class="column2 blue-border">
+					<a href="#"><p class="padding-3" style="color: black;">Temp</p></a>
+				</div>
 
-					<div class="dropdown">
+				<div class="column2 green-border">
+					<a href="/"><p class="padding-3" style="color: black;">Portfolio</p></a>
+				</div>
 
-					    <div class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-					    	<p class="opensans pill padding-3 no-right">Dropdown<i class="fa fa-angle-down"></i></p>
-					    </div>
-
-					    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-						    <li role="presentation"><a role="disabled" tabindex="-1" href="#">Something else here</a></li>
-						    <li role="presentation" class="divider"></li>
-						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
-					    </ul>
-					</div>
-
+				<div class="column2 orange-border">
+					<a href="/"><p class="padding-3" style="color: black;">Contact Us</p></a>
 				</div>
 
 			</div>
