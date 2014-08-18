@@ -24,7 +24,6 @@
 	}
 
 }
-
 html{
 	height:100%;
 }
@@ -35,12 +34,6 @@ img{
 	max-height:909px;
 	width:100%;
 	overflow: hidden;
-}
-footer{
-	width:100%;
-	position: absolute;
-	bottom:0px;
-	background-color:white;
 }
 .aa{
     -webkit-font-smoothing: antialiased;
@@ -108,6 +101,12 @@ padding:0px 0px 0px 0px;
 
 .float{
 	float: none;
+}
+.footer{
+	width:100%;
+	position: absolute;
+	bottom:0px;
+	background-color:white;
 }
 .no-right{
 	margin-right:15px;
