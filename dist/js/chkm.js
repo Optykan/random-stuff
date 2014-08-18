@@ -1,4 +1,4 @@
-if (window.innerWidth <= 798) {
+if (window.innerWidth <= 797) {
 
 	if ($.cookie('mobile') == '0'){
 		console.log('User has opted to keep desktop version');
