@@ -3,6 +3,8 @@
 	<head>
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8"> 
+
 		<link rel="icon" type="image/png" href="favicon.png">
 
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -16,7 +18,7 @@
 		<script src="dist/js/jquery.cookie.js"></script>
 
 		<script src="dist/js/chkm.js"></script>
-		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.1/jquery.jcarousel.js"></script>
+		<script src="dist/js/misc.js"></script>
 		
 		<title> Aspyre | Home </title>
 
@@ -42,20 +44,27 @@
 		</script>-->
 		<script>
 		window.onresize = function(event) {
-			if(window.innerWidth <= 797){
-				document.getElementById('alert').visibility="visible";
+			if($.cookie('dismiss') == '1'){
+				document.getElementById('alert').style.visibility="hidden";
+			}
+			else if(window.innerWidth <= 797){
+				document.getElementById('alert').style.opacity="1";
+			}
+			else if(window.innerWidth > 797){
+				document.getElementById('alert').style.opacity="0";
 			}
 
 		};
+
         </script>
 
 	</head>
 
 	<body class="opensans">
-
-		<div class="alert" id="alert" style="display:inline; visibility:hidden;">
+			
+		<div class="alert" id="alert" style="display:inline;">
 			<i class="fa fa-exclamation-triangle" style="font-size:1.5em;"></i>
-			Small screen size detected. 
+			Small screen size detected.<a onclick="dismiss()" href="#"><i class="fa fa-times dismiss" style="color: black;"></i></a>
 			</br>
 			Would you like to visit <a href="http://syang0525.github.io/m/index.html">the mobile site?</a>
 		</div>
@@ -67,7 +76,7 @@
 			<div class="container12">
 
 				<div class="column4">
-					<img src="logo.png" style="height:70%; width:70%; margin-top:-7px;" class="imgfix">
+					<img src="logo.png" style="height:70%; width:70%; margin-top:-7px;" class="imgfix" alt="http://syang0525.github.io/logo.png">
 				</div>
 
 				<div class="column2 red-border">
@@ -149,6 +158,8 @@
 	</footer>
 
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.1/jquery.jcarousel.js"></script>
+
 
 </html>
 

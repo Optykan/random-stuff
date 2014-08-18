@@ -40,10 +40,10 @@ footer{
 	width:100%;
 	position: absolute;
 	bottom:0px;
+	background-color:white;
 }
 .aa{
     -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
     -o-font-smoothing: antialiased;
     -ms-font-smoothing: antialiased;
 }
@@ -78,6 +78,16 @@ padding:0px 0px 0px 0px;
     right:10px;
     z-index:9999;
     font-size:0.8em;
+    opacity:0;
+    -webkit-transition: opacity 0.3s;
+	-moz-transition: opacity 0.3s;
+	-o-transition: opacity 0.3s;	
+	-ms-transition: opacity 0.3s;
+}
+.dismiss{
+	position:absolute;
+	top:4px;
+	right:5px;
 }
 .main-nav{
 	background-color:white;
