@@ -3,23 +3,30 @@
 	<head>
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8"> 
+
 		<link rel="icon" type="image/png" href="favicon.png">
 
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
 
 		<link href="dist/css/styles.css" rel="stylesheet"/>
 		<link href="dist/css/1140.css" rel="stylesheet" />
 		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 		<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-		<link href="dist/css/fix.css" rel="stylesheet" media="only screen and (max-width: 700px)" >
-		
-		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.1/jquery.jcarousel.js"></script>
-		
-		<title> Aspyre | Error 404 </title>
 
-		<script>
+
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.1/jquery.jcarousel.js"></script>
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="dist/js/jquery.cookie.js"></script>
+
+		<script src="dist/js/chkm.js"></script>
+		<script src="dist/js/misc.js"></script>
+		
+		<title> Aspyre | Home </title>
+
+		<!--<script>
 		$(document).ready(function () {
 		    $('.dropdown-toggle').mouseover(function() {
 		        $('.dropdown-menu').show();
@@ -38,40 +45,59 @@
 		        })
 		    })
 		})
-		</script>
+		</script>-->
+		<script>
+		window.onresize = function(event) {
+			if($.cookie('dismiss') == '1'){
+				document.getElementById('alert').style.visibility="hidden";
+			}
+			else if(window.innerWidth <= 797){
+				document.getElementById('alert').style.opacity="1";
+			}
+			else if(window.innerWidth > 797){
+				document.getElementById('alert').style.opacity="0";
+			}
+
+		};
+
+        </script>
 
 	</head>
 
-	<body style="overflow:hidden;">
+	<body class="opensans">
+			
+		<div class="alert" id="alert" style="display:inline;">
+			<i class="fa fa-exclamation-triangle" style="font-size:1.5em;"></i>
+			Small screen size detected.<a onclick="hide()" href="#"><i class="fa fa-times dismiss" style="color: black;"></i></a>
+			<br>
+			Would you like to visit <a href="http://syang0525.github.io/m/index.html">the mobile site?</a>
+			<a onclick="dismiss()"><p style="font-size:0.7em; margin-bottom:-7px; margin-left:135px;">Dont show this again</p></a>
+		</div>
+
+		<!-- NAVIGATION -->
+
 		<div class="main-nav">
 
 			<div class="container12">
 
-				<div class="column8">
-					<img src="logo.png" style="height:30%; width:30%; margin-top:-7px;" class="imgfix">
+				<div class="column4">
+					<img src="logo.png" style="height:70%; width:70%; margin-top:-7px;" class="imgfix" alt="http://syang0525.github.io/logo.png">
 				</div>
 
 				<div class="column2 red-border">
-					<a href="/"><p class="opensans padding-3" style="color: black;">Home</p></a>
+					<a href="/"><p class="padding-3" style="color: black;">Home</p></a>
 				</div>
 				
-				<div class="column2">
+				<div class="column2 blue-border">
+					<a href="#"><p class="padding-3" style="color: black;">Temp</p></a>
+				</div>
 
-					<div class="dropdown">
+				<div class="column2 green-border">
+					<a href="/"><p class="padding-3" style="color: black;">Portfolio</p></a>
+				</div>
 
-					    <div class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-					    	<p class="opensans pill padding-3 no-right">Dropdown<i class="fa fa-angle-down"></i></p>
-					    </div>
-
-					    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-						    <li role="presentation"><a role="disabled" tabindex="-1" href="#">Something else here</a></li>
-						    <li role="presentation" class="divider"></li>
-						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
-					    </ul>
-					</div>
-
+				<div class="column2 orange-border">
+					<a href="/"><p class="padding-3" style="color: black;">Contact Us</p></a>
 				</div>
 
 			</div>
@@ -89,9 +115,15 @@
 
 		</div>
 
-		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-		<script src="dist/js/misc.js"></script>
+		<div class="footer">
+			<hr class="hr-divider">
+			<p class="pull-right padding-3" style="margin-right:20px;"> <a onclick="mobile()" href="m/index.html">Mobile</a> | Desktop</p>
+		</div>
+	
 	</body>
 
 </html>
 
+
+
+		
