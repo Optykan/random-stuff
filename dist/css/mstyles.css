@@ -1,0 +1,13 @@
+.mobile-nav{
+	height:10%;
+	width:100%;
+	background-color: #0C090A;
+}
+.right{
+	position:absolute;
+	right:10px;
+	top:5px;
+}
+.white{
+	color:white;
+}
