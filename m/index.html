@@ -8,6 +8,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 		<link href="../dist/css/styles.css" rel="stylesheet"/>
+		<link href="../dist/css/mstyles.css" rel="stylesheet"/>
 		<link href="../dist/css/1140.css" rel="stylesheet" />
 		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 		<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
@@ -20,67 +21,23 @@
 		
 		<title> Aspyre | Home | Mobile </title>
 
-		<script>
-		$(document).ready(function () {
-		    $('.dropdown-toggle').mouseover(function() {
-		        $('.dropdown-menu').show();
-		    })
-
-		    $('.dropdown-toggle').mouseout(function() {
-		        t = setTimeout(function() {
-		            $('.dropdown-menu').hide();
-		        }, 100);
-
-		        $('.dropdown-menu').on('mouseenter', function() {
-		            $('.dropdown-menu').show();
-		            clearTimeout(t);
-		        }).on('mouseleave', function() {
-		            $('.dropdown-menu').hide();
-		        })
-		    })
-		})
-		</script>
-
 	</head>
 
 	<body>
 
 		<!-- NAVIGATION -->
 
-		<div class="main-nav">
+		<div class="mobile-nav">
 
-			<div class="container12">
+		<i class="fa fa-bars white right"></i>
+			<div class="nav-container">
 
-				<div class="column8">
-					<img src="../logo.png" style="height:30%; width:30%; margin-top:-7px;" class="imgfix">
-				</div>
-
-				<div class="column2 red-border">
-					<a href="/"><p class="opensans padding-3" style="color: black;">Home</p></a>
-				</div>
-				
-				<div class="column2">
-
-					<div class="dropdown">
-
-					    <div class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-					    	<p class="opensans pill padding-3 no-right">Dropdown<i class="fa fa-angle-down"></i></p>
-					    </div>
-
-					    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-						    <li role="presentation"><a role="disabled" tabindex="-1" href="#">Something else here</a></li>
-						    <li role="presentation" class="divider"></li>
-						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
-					    </ul>
-					</div>
-
-				</div>
+				<li class="content-text"></li>
 
 			</div>
 
 		</div>
+
 
 		<div class="container-fluid">
 
