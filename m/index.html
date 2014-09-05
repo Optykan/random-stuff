@@ -3,6 +3,8 @@
 	<head>
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8"> 
+
 		<link rel="icon" type="image/png" href="../favicon.png">
 
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -14,10 +16,9 @@
 		<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
 		<link href="../dist/css/fix.css" rel="stylesheet" media="only screen and (max-width: 700px)" >
 		
-		<script src="../dist/js/misc.js"></script>
-		<script src="../dist/js/jquery.cookie.js"></script>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.1/jquery.jcarousel.js"></script>
+		<script type="text/javascript" src="../dist/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="../dist/js/misc.js"></script>
 		
 		<title> Aspyre | Home | Mobile </title>
 
@@ -27,19 +28,23 @@
 
 		<!-- NAVIGATION -->
 
-		<div class="mobile-nav">
+		<div class="mobile-nav" style="z-index:9999;">
 
-		<a onclick="menu()"><i class="fa fa-bars white right" style="font-size:2em;"></i></a>
-			<div class="nav-content" id="nav-content">
+				<a onclick="menu()"><i class="fa fa-bars white right" style="font-size:2em;"></i></a>
 
-				<li class="content-text"></li>
+				<div class="nav-content" id="nav-content" style="z-index:100; opacity:0;">
 
-			</div>
+					<li class="content-text">a</li>
+					<li class="content-text">a</li>
+					<li class="content-text">a</li>
+					<li class="content-text">a</li>
+
+				</div>
 
 		</div>
 
 
-		<div class="container-fluid">
+		<div class="container-fluid" style="z-index:-1;">
 
 			<!--<div class="row" style="margin-top:30px; margin-left:15px; margin-right:15px;">
 

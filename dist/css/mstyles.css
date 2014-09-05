@@ -4,11 +4,15 @@
 	background-color: #0C090A;
 }
 .nav-content{
+	position:absolute;
+	margin-top:50px;
 	background-color: #0C090A;
-	-webkit-transition: height 0.3s;
-	-moz-transition: height 0.3s;
-	-o-transition: height 0.3s;	
-	-ms-transition: height 0.3s;
+	opacity:0;
+	width:100%;
+	-webkit-transition: height 0.2s;
+	-moz-transition: height 0.2s;
+	-o-transition: height 0.2s;	
+	-ms-transition: height 0.2s;
 }
 .right{
 	position:absolute;
@@ -17,4 +21,11 @@
 }
 .white{
 	color:white;
+}
+.content-text{
+	color:white;
+	font-family: 'Open Sans', sans-serif;	
+}
+.nav-content>li.content-text{
+	width:100%;
 }

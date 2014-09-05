@@ -7,15 +7,16 @@ function hide(){
 	document.getElementById('alert').style.opacity="0";
 }
 function menu(){
-$.cookie('dismiss', '1', { expires: 7, path: '/'});
-	if(toggle=="1"){
-		document.getElementById('nav-content').style.height="300px";
-		alert(toggle);
-	}
-
-	else if(toggle=="0"){
-		document.getElementById('nav-content').style.height="75px";
-		window.toggle="1";
+	if($.cookie('toggle')=="0"){
+		//document.getElementById('nav-content').style.height="50px";
+		document.getElementById('nav-content').style.opacity="1";
+		$.cookie('toggle', '1', { expires: 7, path: '/'});
 		console.log("1");
+	}
+	else{
+		//document.getElementById('nav-content').style.height="300px";
+		document.getElementById('nav-content').style.opacity="0";
+	 	$.cookie('toggle', '0', { expires: 7, path: '/'});
+	 	console.log($.cookie('toggle'));
 	}
 }
