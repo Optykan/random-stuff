@@ -3,6 +3,13 @@
 	width:100%;
 	background-color: #0C090A;
 }
+.nav-content{
+	background-color: #0C090A;
+	-webkit-transition: height 0.3s;
+	-moz-transition: height 0.3s;
+	-o-transition: height 0.3s;	
+	-ms-transition: height 0.3s;
+}
 .right{
 	position:absolute;
 	right:10px;
