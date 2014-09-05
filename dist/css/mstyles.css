@@ -19,13 +19,26 @@
 	right:10px;
 	top:10px;
 }
+.left{
+	position:absolute;
+	left:10px;
+	top:10px;
+}
 .white{
 	color:white;
 }
+.orbitron{
+	font-family: 'Orbitron', sans-serif;
+}
 .content-text{
+	position:relative;
+	width:100%;
 	color:white;
-	font-family: 'Open Sans', sans-serif;	
+	font-family: 'Open Sans', sans-serif;
+	text-align:center;	
 }
 .nav-content>li.content-text{
 	width:100%;
+	list-style-type: none;
+	padding:3px 3px 3px 3px;
 }
