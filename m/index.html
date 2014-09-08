@@ -27,13 +27,19 @@
 
 	<body>
 
+		<script>
+		$( window ).unload(function() {
+			$.cookie('toggle', '0', { expires: 7, path: '/'});
+		});
+		</script>
+
 		<!-- NAVIGATION -->
 
 		<div class="mobile-nav" style="z-index:9999;">
 
 				<a onclick="menu()"><i class="fa fa-bars white right" style="font-size:2em;"></i></a>
 				<p class="left white orbitron" style="font-size:2em;">ASPYRE</p>
-				<div class="nav-content" id="nav-content" style="z-index:100; opacity:0;">
+				<div class="nav-content" id="nav-content" style="z-index:100;">
 
 					<li class="content-text">a</li>
 					<li class="content-text">a</li>
@@ -97,7 +103,7 @@
 				<a class="btn btn-info opensans" href="../index.html">Back home!</a></p>
 				</br></br></br></br>
 
-				<p class="quicksand" style="font-size:1em;"> Got here by accident? Try expanding your screen size! If on mobile, click <a onclick="desktop()" href="../index.html"> here </a> to stay on the desktop site</p>
+				<!--<p class="quicksand" style="font-size:1em;"> Got here by accident? Try expanding your screen size! If on mobile, click <a onclick="desktop()" href="../index.html"> here </a> to stay on the desktop site</p>-->
 			</center>
 
 		</div>
